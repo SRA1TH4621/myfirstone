@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Bar -->
+    <header class="header-bar">
+        <div class="logo">
+            <h1>INFINITEQUOTES</h1>
+        </div>
+        <div class="menu-toggle">☰</div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quotes.html">Quotes</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="about.html">About Us</a></li>
+                              <li><a href="login.html" class="login-button">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Quotes Page Content -->
+    <section class="quotes">
+        <div class="quotes-content">
+            <h2>Upload Your Quotes</h2>
+            <form action="upload.php" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="quote-file">Choose a file to upload</label>
+                    <input type="file" id="quote-file" name="quote-file" accept=".txt,.pdf" required>
+                </div>
+                <button type="submit" class="cta-button">Upload</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
